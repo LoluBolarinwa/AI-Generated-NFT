@@ -30,7 +30,10 @@ function App() {
   return (
     <div>
       <Navigation account={account} setAccount={setAccount} />
-      <p>Edit App.js to get started.</p>
+      <div className="form">
+        <form>
+        </form>
+      </div>
 
     </div>
   );
