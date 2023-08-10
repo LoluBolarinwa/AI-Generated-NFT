@@ -30,9 +30,18 @@ function App() {
   return (
     <div>
       <Navigation account={account} setAccount={setAccount} />
+      
       <div className="form">
         <form>
+        <input type="text" placeholder="create a name..."></input>
+          <input type="text" placeholder="write a description..."></input>
+          <input type="submit" value="mint"></input>
         </form>
+        <div className="image">
+          <img src=""  alt="AI generated Image" />
+          <img src=""  alt="AI generated Image" />
+          <img src=""  alt="AI generated Image" />
+        </div>
       </div>
 
     </div>
