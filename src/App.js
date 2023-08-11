@@ -23,6 +23,9 @@ function App() {
     setProvider(provider)
   }
 
+const submitHandler
+
+
   useEffect(() => {
     loadBlockchainData()
   }, [])
@@ -32,7 +35,7 @@ function App() {
       <Navigation account={account} setAccount={setAccount} />
       
       <div className="form">
-        <form>
+        <form onSubmit={submitHandler}>
         <input type="text" placeholder="create a name..."></input>
           <input type="text" placeholder="write a description..."></input>
           <input type="submit" value="mint"></input>
@@ -40,10 +43,10 @@ function App() {
         <div className="image">
           <img src=""  alt="AI generated Image" />
           <img src=""  alt="AI generated Image" />
-          <img src=""  alt="AI generated Image" />
         </div>
       </div>
 
+    <p> View &nbsp; <a href="" target="_blank" rel="noreferrer" >Metadata</a></p>
     </div>
   );
 }
