@@ -31,8 +31,14 @@ function App() {
 const submitHandler = async (e) =>{
   e.preventDefault();
   console.log('x Submtting x', name, description);
+
+  createImage();
 }
 
+// call function for parameters for the AI Neural Network API //
+const createImage = async () => {
+  console.log("Generating Image...");
+}
 
   useEffect(() => {
     loadBlockchainData()
