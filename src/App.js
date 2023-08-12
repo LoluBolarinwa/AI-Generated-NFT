@@ -18,6 +18,10 @@ function App() {
   const [provider, setProvider] = useState(null)
   const [account, setAccount] = useState(null)
 
+  // Event Listener for the name and description for mint Action //
+  const [name, setName] = useState("");
+  const [description, setDescription] = useState("");
+
   const loadBlockchainData = async () => {
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     setProvider(provider)
@@ -26,7 +30,7 @@ function App() {
   // submitHandler async to prevent default form reload then route 'mint' action the AI Neural Networks through the API //
 const submitHandler = async (e) =>{
   e.preventDefault();
-  console.log('x Submtting x');
+  console.log('x Submtting x', name, description);
 }
 
 
@@ -40,9 +44,9 @@ const submitHandler = async (e) =>{
       
       <div className="form">
         <form onSubmit={submitHandler}>
-        <input type="text" placeholder="create a name..."></input>
-          <input type="text" placeholder="write a description..."></input>
-          <input type="submit" value="mint"></input>
+          <input type="text" placeholder="create a name..." onChange={ (e) => {setName(e.target.value)} }></input>
+          <input type="text" placeholder="write a description..." onChange={ (e) => {setDescription(e.target.value)} }></input>
+          <input type="submit" value="mint" onChange={(e) => {}}></input>
         </form>
         <div className="image">
           <img src=""  alt="AI generated Image" />
