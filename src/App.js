@@ -30,7 +30,7 @@ function App() {
   // submitHandler async to prevent default form reload then route 'mint' action the AI Neural Networks through the API //
 const submitHandler = async (e) =>{
   e.preventDefault();
-  // console.log('x Submtting x', name, description);
+  console.log('x Submtting x', name, description);
 
   createImage();
 }
@@ -60,7 +60,7 @@ const createImage = async () => {
         </div>
       </div>
 
-    <p> View &nbsp; <a href="" target="_blank" rel="noreferrer" >Metadata</a></p>
+    {/* <p> View &nbsp; <a href="" target="_blank" rel="noreferrer" >Metadata</a></p> */}
     </div>
   );
 }
