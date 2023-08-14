@@ -60,7 +60,7 @@ const createImage = async () => {
         </div>
       </div>
 
-    {/* <p> View &nbsp; <a href="" target="_blank" rel="noreferrer" >Metadata</a></p> */}
+    <p> View &nbsp; <a href="" target="_blank" rel="noreferrer" >Metadata</a></p>
     </div>
   );
 }
