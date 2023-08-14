@@ -38,6 +38,15 @@ const submitHandler = async (e) =>{
 // call function for parameters for the AI Neural Network API //
 const createImage = async () => {
   console.log("Generating Image...");
+
+  axios({
+    method: post,
+    url: ,
+    data: {
+      
+    }
+
+  });
 }
 
   useEffect(() => {
