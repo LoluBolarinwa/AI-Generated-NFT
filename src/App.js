@@ -42,7 +42,7 @@ const createImage = async () => {
   axios({
     method: post,
     url: ,
-    data: {
+    data{
       
     }
 
