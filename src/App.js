@@ -39,16 +39,18 @@ const submitHandler = async (e) =>{
 const createImage = async () => {
   console.log("Generating Image...");
 
+  const URL = '';
+
   axios({
-    // url: ,
+    // url: URL,
     // method: 'POST',
     // headers:{
        
     // },
     // data: {
       
-    // },
-    // responseType: 'arraybuffer'
+    },
+    responseType: 'arraybuffer'
 
   });
 }
