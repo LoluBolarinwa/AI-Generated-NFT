@@ -40,15 +40,15 @@ const createImage = async () => {
   console.log("Generating Image...");
 
   axios({
-    method: 'post',
-    url: ,
-    headers:{
+    // url: ,
+    // method: 'POST',
+    // headers:{
        
-    },
-    data: {
+    // },
+    // data: {
       
-    }
-    responseType: 'arraybuffer'
+    // },
+    // responseType: 'arraybuffer'
 
   });
 }
