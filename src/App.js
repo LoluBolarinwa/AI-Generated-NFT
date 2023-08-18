@@ -47,10 +47,11 @@ const createImage = async () => {
     // headers:{
        
     // },
-    // data: {
+    // data
+    daj kdf : {
       
-    },
-    responseType: 'arraybuffer'
+    // },
+    // responseType: 'arraybuffer'
 
   });
 }
