@@ -43,12 +43,11 @@ const createImage = async () => {
 
   axios({
     // url: URL,
-    method: 'POST',
-    headers:{
+    // method: 'POST',
+    // headers:{
        
     // },
-    // data
-    // daj kdf : {
+    // data: {
       
     // },
     // responseType: 'arraybuffer'
