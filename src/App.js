@@ -37,7 +37,7 @@ const submitHandler = async (e) =>{
 
 // call function for parameters for the AI Neural Network API //
 const createImage = async () => {
-  console.log("Generating Image...");
+  // console.log("Generating Image...");
 
   const URL = '';
 
