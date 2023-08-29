@@ -55,7 +55,7 @@ const createImage = async () => {
   });
 }
 
-  useEffect(() => {
+  // useEffect(() => {
     loadBlockchainData()
   }, [])
 
