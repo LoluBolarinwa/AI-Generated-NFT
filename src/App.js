@@ -35,7 +35,7 @@ const submitHandler = async (e) =>{
   createImage();
 }
 
-// call function for parameters for the AI Neural Network API //
+call function for parameters for the AI Neural Network API //
 const createImage = async () => {
   console.log("Generating Image...");
 
@@ -55,7 +55,7 @@ const createImage = async () => {
   });
 }
 
-  // useEffect(() => {
+  useEffect(() => {
     loadBlockchainData()
   }, [])
 
