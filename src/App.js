@@ -30,27 +30,27 @@ function App() {
   // submitHandler async to prevent default form reload then route 'mint' action the AI Neural Networks through the API //
 const submitHandler = async (e) =>{
   e.preventDefault();
-  console.log('x Submtting x', name, description);
+  // console.log('x Submtting x', name, description);
 
   createImage();
 }
 
-call function for parameters for the AI Neural Network API //
+  //call function for parameters for the AI Neural Network API //
 const createImage = async () => {
   console.log("Generating Image...");
 
-  const URL = '';
+  // const URL = '';
 
   axios({
-    // url: URL,
-    // method: 'POST',
-    // headers:{
+    url: URL,
+    method: 'POST',
+    headers:{
        
-    // },
-    // data: {
+    },
+    data: {
       
-    // },
-    // responseType: 'arraybuffer'
+    },
+    responseType: 'arraybuffer'
 
   });
 }
