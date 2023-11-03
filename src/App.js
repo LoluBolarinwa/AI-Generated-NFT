@@ -3,6 +3,7 @@ import { NFTStorage, File } from 'nft.storage'
 import { Buffer } from 'buffer';
 import { ethers } from 'ethers';
 import axios from 'axios';
+// import REACT_APP_HUGGING_FACE_API_KEY from '.env'
 
 // Components
 import Spinner from 'react-bootstrap/Spinner';
@@ -33,9 +34,9 @@ function App() {
   // submitHandler async to prevent default form reload then route 'mint' action the AI Neural Networks through the API //
   const submitHandler = async (e) => {
     e.preventDefault();
-    // console.log('x Submtting x', name, description);
+    console.log('x Submtting x', name, description);
 
-    createImage();
+     createImage(); // API call to generte image based on description
   }
 
   //call function for parameters for the AI Neural Network API //
@@ -43,7 +44,8 @@ function App() {
     console.log("Generating Image...");
 
     // API URL from AI generating model //
-    const URL = 'https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-2';
+    const URL = 'https://api-inference.huggingface.co/api/models/stabilityai/stable-diffusion-2';
+    // const URL = 'https://huggingface.co/stabilityai/stable-diffusion-2?text=';
 
     // Send the request //
     const response = axios({
@@ -60,21 +62,25 @@ function App() {
       responseType: 'arraybuffer'
     });
 
-    const type = response.headers['content-type']
-    const data = response.data 
+    // const type = response.headers['content-type']
+    // const data = response.data 
 
-    const base64data = Buffer.from(data).toString('base64');
-    const img = `data:${type};base64,` + base64data   //This is for showing it on the page
+    // const base64data = Buffer.from(data).toString('base64');
+    // const img = `data:${type};base64,` + base64data   //This is for showing it on the page
    
-    setImage(img)
+    // setImage(img)
 
-    return data;
+    // return data;
 
   }
 
   useEffect(() => {
     loadBlockchainData()
   }, [])
+
+
+
+
 
   return (
     <div>
@@ -87,8 +93,7 @@ function App() {
           <input type="submit" value="mint" onChange={(e) => { }}></input>
         </form>
         <div className="image">
-          <img src="" alt="AI generated Image" />
-          <img src="" alt="AI generated Image" />
+          <img src={image} alt="AI generated Image" />
         </div>
       </div>
 
