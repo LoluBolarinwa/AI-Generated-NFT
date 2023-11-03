@@ -87,14 +87,14 @@ function App() {
       <Navigation account={account} setAccount={setAccount} />
 
       <div className="form">
+        <div className="image">
+          <img src={image} alt="AI generated Image" />
+        </div>
         <form onSubmit={submitHandler}>
           <input type="text" placeholder="create a name..." onChange={(e) => { setName(e.target.value) }}></input>
           <input type="text" placeholder="write a description..." onChange={(e) => { setDescription(e.target.value) }}></input>
           <input type="submit" value="mint" onChange={(e) => { }}></input>
         </form>
-        <div className="image">
-          <img src={image} alt="AI generated Image" />
-        </div>
       </div>
 
       <p> View &nbsp; <a href="" target="_blank" rel="noreferrer" >Metadata</a></p>
