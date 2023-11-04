@@ -37,6 +37,7 @@ nav {
   -webkit-text-stroke: 2px;
   letter-spacing: 3px;
 
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,10 +173,16 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  
+  
   .nav__connect {
     width: 125px;
     height: 40px;
     border-radius: 20px;
+  }
+
+  .nav__brand {
+    padding: 15px;
   }
 
   .image {
@@ -183,7 +190,6 @@ p {
     justify-content: center;
     align-items: center;
   
-    max-width: 100%;
     width: 312px;
     height: 312px;
     margin: 0 25px;
