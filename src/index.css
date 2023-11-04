@@ -191,17 +191,12 @@ p {
   }
 
   .image {
-    /* width: 312px; */
-
-    /* max-width: 100%; */
+    width: 312px;
+    /* max-width: fit-content; */
     max-height: 100%;
-    /* width: 512px; */
-    /* height: 512px; */
-    /* margin: 50px 25px; */
     border: 1px solid var(--clr-blue);
     border-radius: 20px;
   
-    /* padding-top: 0px; */
     overflow: hidden;
   }
   

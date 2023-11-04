@@ -88,7 +88,7 @@ function App() {
 
       <div className="form">
         <div className="image">
-          <img src={`https://i.postimg.cc/tCtyHc6G/English-In-Norway900.webp`} alt="AI generated Image" />
+          <img src={`https://i.postimg.cc/5t8yWT7L/Image-Mash-4-kika-klat-untitled-b79f486.jpg`} alt="AI generated Image" />
         </div>
         <form onSubmit={submitHandler}>
           <input type="text" placeholder="create a name..." onChange={(e) => { setName(e.target.value) }}></input>
