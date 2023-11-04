@@ -145,6 +145,7 @@ form input[type="submit"]:hover {
   border: 1px solid var(--clr-blue);
   border-radius: 20px;
 
+  padding-top: 0px;
   overflow: hidden;
 }
 
@@ -172,28 +173,23 @@ p {
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-  
-  
+@media screen and (max-width: 768px) {  
   .nav__connect {
     width: 125px;
     height: 40px;
     border-radius: 20px;
+    justify-content: right;
+    align-items: right;
   }
 
   .nav__brand {
-    padding: 15px;
+    padding: 5px;
+    justify-content: left;
   }
 
   .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
     width: 312px;
     height: 312px;
-    margin: 0 25px;
-    border-radius: 20px;
   }
   
   .form {
