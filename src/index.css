@@ -42,7 +42,8 @@ nav {
   justify-content: center;
   align-items: center;
 
-  padding: 20px;
+  padding: 2px 0px;
+  background-color: aqua;
 }
 
 .nav__brand h1 {
@@ -138,21 +139,23 @@ form input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
 
-  max-width: 90%;
+  max-width: 100%;
+  /* max-height: 100%; */
   width: 512px;
-  height: 512px;
-  margin: 0 25px;
+  /* height: 512px; */
+  /* margin: 50px 25px; */
   border: 1px solid var(--clr-blue);
   border-radius: 20px;
 
-  padding-top: 0px;
+  /* padding-top: 0px; */
   overflow: hidden;
 }
 
 .image img {
-  width: 512px;
-  height: 512px;
+  width: 100%;
+  height: auto;
   border-radius: 6px;
+
 }
 
 .image__placeholder {
@@ -188,8 +191,18 @@ p {
   }
 
   .image {
-    width: 312px;
-    height: 312px;
+    /* width: 312px; */
+
+    /* max-width: 100%; */
+    max-height: 100%;
+    /* width: 512px; */
+    /* height: 512px; */
+    /* margin: 50px 25px; */
+    border: 1px solid var(--clr-blue);
+    border-radius: 20px;
+  
+    /* padding-top: 0px; */
+    overflow: hidden;
   }
   
   .form {
