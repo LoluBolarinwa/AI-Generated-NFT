@@ -33,10 +33,10 @@ nav {
 
 .nav__brand {
   font-family: 'Montserrat Alternates', sans-serif;
-  /* text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; */
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px;
   letter-spacing: 3px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,7 +172,27 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .nav__connect {
+    width: 125px;
+    height: 40px;
+    border-radius: 20px;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    max-width: 100%;
+    width: 312px;
+    height: 312px;
+    margin: 0 25px;
+    border-radius: 20px;
+  }
+  
   .form {
     flex-direction: column;
   }
+
+  
 }
