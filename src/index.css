@@ -177,8 +177,8 @@ p {
 
 @media screen and (max-width: 768px) {  
   .nav__connect {
-    width: 125px;
-    height: 40px;
+    width: 100px;
+    height: 35px;
     border-radius: 20px;
     justify-content: right;
     align-items: right;
