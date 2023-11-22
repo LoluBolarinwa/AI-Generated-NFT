@@ -48,7 +48,7 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   /* -webkit-backdrop-filter: blur(5px); */
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(1px);
 
 }
 
