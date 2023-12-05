@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NFTStorage, File } from 'nft.storage'
+import { Web3Storage } from 'web3.storage'
 import { Buffer } from 'buffer';
 import { ethers } from 'ethers';
 import axios from 'axios';
@@ -39,6 +40,7 @@ function App() {
      createImage(); // API call to generte image based on description
   }
 
+
   //call function for parameters for the AI Neural Network API //
   const createImage = async () => {
     console.log("Generating Image...");
@@ -72,6 +74,10 @@ function App() {
 
     // return data;
 
+  }
+
+  const uploadImage = async (){
+    new web3Storage({})
   }
 
   useEffect(() => {
