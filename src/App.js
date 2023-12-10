@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NFTStorage, File } from 'nft.storage'
-import { Web3Storage } from 'web3.storage'
+import { Web3Storage, getFilesFromPath } from 'web3.storage'
 import { Buffer } from 'buffer';
 import { ethers } from 'ethers';
 import axios from 'axios';
@@ -78,7 +78,9 @@ function App() {
 
   const uploadImage = async (){
     // NFT Initiating Instance
-    const tokens = new web3.Storage({token: process.env.REACT_APP_WEB3_STORAGE_API_KEY});
+    const token = process.env.REACT_APP_WEB3_STORAGE_API_KEY;
+    const client = new Web3Storage({ token });
+    
   }
 
   useEffect(() => {
