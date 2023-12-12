@@ -100,7 +100,7 @@ form {
 }
 
 form input[type="text"] {
-  width: 250px;
+  width: 200px;
   height: 50px;
   margin: 10px 0;
   padding: 10px;
@@ -115,7 +115,7 @@ form input[type="submit"] {
   background-color: var(--clr-blue);
   color: var(--clr-white);
 
-  width: 250px;
+  width: 200px;
   height: 50px;
   margin: 10px 0;
   padding: 10px;

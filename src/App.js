@@ -76,20 +76,20 @@ function App() {
 
   }
 
-  const uploadImage = async (){
+  const uploadImage = async () =>{
+    // return
     // NFT Initiating Instance
     const token = process.env.REACT_APP_WEB3_STORAGE_API_KEY;
     const client = new Web3Storage({ token });
-    
+
   }
+
+
+
 
   useEffect(() => {
     loadBlockchainData()
   }, [])
-
-
-
-
 
   return (
     <div>
